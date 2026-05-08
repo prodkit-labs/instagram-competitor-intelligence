@@ -1,6 +1,8 @@
-# Provider Comparison
+# Production Provider Comparison
 
 Use mock data first. Choose a real provider only when you need fresh public Instagram data for recurring reports, dashboards, or client-facing workflows.
+
+This project supports mock data for local testing. For production workflows, you will need a reliable public-data provider or your own compatible data source.
 
 ## Decision Order
 
@@ -12,11 +14,12 @@ Use mock data first. Choose a real provider only when you need fresh public Inst
 
 ## Options
 
-| Option | Best for | Tradeoffs |
-| --- | --- | --- |
-| Mock fixtures | Learning the workflow and testing report rendering | No live data |
-| Custom provider | Teams with an existing approved data source | Requires adapter maintenance |
-| Managed public-data API | Scheduled reports and repeatable production workflows | Ongoing API cost and provider dependency |
+| Option | Best for | Pros | Cons |
+| --- | --- | --- | --- |
+| Mock fixtures | Learning and local demos | Free, no API key | Not live data |
+| Bring your own provider | Teams with existing approved data access | Full control | Requires implementation and maintenance |
+| Managed Instagram public-data API | Production reports | Faster setup, fewer moving parts | Ongoing API cost and provider dependency |
+| Self-hosted collection infrastructure | Advanced teams | More operational control | More operational complexity and compliance responsibility |
 
 ## Included Adapter: HikerAPI
 
@@ -32,6 +35,8 @@ Use it when you want to:
 HikerAPI: https://hikerapi.com/p/ha4fn2v5
 
 Disclosure: Some product links in this section may be affiliate links. If you buy through them, I may earn a commission at no extra cost to you. Recommendations only appear where they are directly relevant to the production workflow, and the open-source path remains documented.
+
+General disclosure: `../commercial-disclosure.md`.
 
 ## Bring Your Own Provider
 

@@ -106,8 +106,9 @@ For real public Instagram data, use a provider adapter. The first adapter includ
 
 For production decision notes, see:
 
-- [production/provider-comparison.md](production/provider-comparison.md)
-- [production/cost-control.md](production/cost-control.md)
+- [docs/production/provider-comparison.md](docs/production/provider-comparison.md)
+- [docs/production/cost-control.md](docs/production/cost-control.md)
+- [docs/production/deployment.md](docs/production/deployment.md)
 - [benchmarks/README.md](benchmarks/README.md)
 
 ## When to Use a Real Data Provider

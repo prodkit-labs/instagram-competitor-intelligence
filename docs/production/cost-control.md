@@ -2,6 +2,24 @@
 
 Provider-backed reports can become expensive when account lists, retries, or schedule frequency grow. Estimate the workflow before turning on recurring runs.
 
+## Basic Formula
+
+```text
+estimated_requests =
+  competitors * endpoints * report_frequency * retry_factor
+```
+
+Example:
+
+```text
+10 competitors
+2 endpoints per competitor
+4 weekly reports per month
+1.2 retry factor
+
+10 * 2 * 4 * 1.2 = 96 requests / month
+```
+
 ## Start With Mock Data
 
 Run the report locally before using a real provider:
@@ -27,13 +45,32 @@ Track:
 - failed runs
 - artifact storage needs
 
+## Cost Factors
+
+- number of competitor accounts
+- number of media items fetched per account
+- report frequency
+- retry policy
+- caching strategy
+- provider pricing model
+
 ## Provider Decision Point
 
-Use a real public-data provider when your workflow needs fresh data, a recurring schedule, or client-facing exports. Compare options in `production/provider-comparison.md` before scaling.
+Use a real public-data provider when your workflow needs fresh data, a recurring schedule, or client-facing exports. Compare options in `provider-comparison.md` before scaling.
 
 HikerAPI is the first provider adapter included in this repo: https://hikerapi.com/p/ha4fn2v5
 
 Disclosure: Some product links in this section may be affiliate links. If you buy through them, I may earn a commission at no extra cost to you. Recommendations only appear where they are directly relevant to the production workflow, and the open-source path remains documented.
+
+When comparing providers, look at:
+
+- successful requests, not just raw requests
+- latency
+- retry cost
+- monthly minimums
+- rate limits
+- data freshness
+- endpoint coverage
 
 ## Reduce Waste
 
