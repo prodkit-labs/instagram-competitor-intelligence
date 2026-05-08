@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased - Trust & Documentation Pack
+
+Added:
+
+- privacy and data-use notes
+- troubleshooting guide
+- metrics documentation
+- data model documentation
+- provider adapter specification
+- architecture overview
+
 ## v0.1.0 - Mock Report Workflow
 
 Initial public starter for Instagram competitor intelligence workflows.

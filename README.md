@@ -173,6 +173,17 @@ python3 examples/06_generate_weekly_report.py
 - Do not commit API keys.
 - Compare providers in the production docs before scaling scheduled runs.
 
+## Documentation
+
+- [Architecture](docs/architecture.md)
+- [Data model](docs/data-model.md)
+- [Metrics](docs/metrics.md)
+- [Provider adapter specification](docs/provider-adapter-spec.md)
+- [Troubleshooting](docs/troubleshooting.md)
+- [Privacy and data use](docs/privacy-and-data-use.md)
+- [Security policy](SECURITY.md)
+- [Changelog](CHANGELOG.md)
+
 ## Ethical Use
 
 This project is for public data analysis and reporting. Do not use it for:
