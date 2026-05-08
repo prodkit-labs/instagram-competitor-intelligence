@@ -20,6 +20,28 @@ Example:
 10 * 2 * 4 * 1.2 = 96 requests / month
 ```
 
+### Example A: Small Weekly Report
+
+```text
+5 competitors
+2 endpoints per competitor
+4 weekly reports per month
+1.2 retry factor
+
+5 * 2 * 4 * 1.2 = 48 requests / month
+```
+
+### Example B: Agency Workflow
+
+```text
+50 competitors
+2 endpoints per competitor
+20 client reports per month
+1.3 retry factor
+
+50 * 2 * 20 * 1.3 = 2,600 requests / month
+```
+
 ## Start With Mock Data
 
 Run the report locally before using a real provider:

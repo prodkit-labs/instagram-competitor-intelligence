@@ -6,6 +6,15 @@ This project does not publish provider rankings without reproducible data.
 
 Use this folder for benchmark notes only when the raw inputs and method can be shared.
 
+Provider benchmark results should not be added unless:
+
+- `benchmarks/raw/...csv` exists
+- `benchmarks/scripts/...py` exists
+- test date is recorded
+- request count is recorded
+- error definition is recorded
+- affiliate disclosure is placed near any provider mention
+
 ## Benchmark Principles
 
 - All raw data must be published in `benchmarks/raw/` when provider results are discussed.
@@ -63,3 +72,11 @@ Raw data:
 Script:
 Limitations:
 ```
+
+## First Benchmarks To Add
+
+Start with local mock workflow benchmarks before publishing provider comparisons:
+
+- `report_generation_mock_5_accounts`
+- `report_generation_mock_50_media_items`
+- `cost_estimation_example_runs`

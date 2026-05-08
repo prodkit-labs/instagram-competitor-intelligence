@@ -1,5 +1,7 @@
 # Agency Client Instagram Competitor Report Template
 
+This template is for agencies or freelance marketers who want to turn generated metrics into a client-facing weekly report.
+
 ## Client
 
 Client name:

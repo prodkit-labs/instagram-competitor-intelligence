@@ -12,6 +12,19 @@ This project supports mock data for local testing. For production workflows, you
 4. Compare provider options against your workflow.
 5. Start with a small account list before scheduling recurring jobs.
 
+## Production Readiness Checklist
+
+Before using a provider-backed workflow:
+
+- [ ] I ran the mock workflow successfully.
+- [ ] I know how many public accounts I want to monitor.
+- [ ] I know the report frequency: daily, weekly, or monthly.
+- [ ] I estimated monthly request volume.
+- [ ] I set retry limits.
+- [ ] I decided where reports are stored.
+- [ ] I added API keys through secrets, not source files.
+- [ ] I reviewed provider terms and pricing.
+
 ## Options
 
 | Option | Best for | Pros | Cons |

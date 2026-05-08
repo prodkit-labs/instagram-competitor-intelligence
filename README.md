@@ -15,6 +15,21 @@ This is not an Instagram API wrapper and it is not an automation bot. It is a pr
 
 ![Sample Instagram competitor report](assets/sample-report-preview.png)
 
+## Who This Is For
+
+- developers building public-data reporting workflows
+- agencies creating weekly competitor reports
+- DTC brands monitoring public competitor accounts
+- social media analysts comparing Reels, hashtags, and creators
+
+## Who This Is Not For
+
+- follower, like, comment, or DM automation
+- private account monitoring
+- Instagram login automation
+- bulk messaging or spam workflows
+- unofficial claims of Meta or Instagram partnership
+
 ## What You Can Build
 
 - Weekly competitor reports for brands or agency clients
@@ -123,7 +138,7 @@ Use a real public-data provider when you want to:
 - build dashboards for clients or internal teams
 - compare public brand accounts over time
 
-## Use Real API Data
+## Use Real Provider Data
 
 Copy the environment example:
 
@@ -131,12 +146,17 @@ Copy the environment example:
 cp .env.example .env
 ```
 
-Add your API key:
+Set a provider adapter and the provider-specific API key:
 
 ```text
-INSTAGRAM_DATA_PROVIDER=hikerapi
-HIKERAPI_KEY=your_api_key_here
+INSTAGRAM_DATA_PROVIDER=your_provider_name
+PROVIDER_SPECIFIC_API_KEY=your_api_key_here
 ```
+
+For the included HikerAPI adapter and custom provider setup, see:
+
+- [docs/data-sources.md](docs/data-sources.md)
+- [docs/production/provider-comparison.md](docs/production/provider-comparison.md)
 
 Then run:
 
