@@ -1,7 +1,6 @@
 from common import load_usernames, parser
 from src.providers.factory import get_provider
 
-
 args = parser("Get recent public posts and Reels").parse_args()
 provider = get_provider(use_mock=args.mock)
 
@@ -16,4 +15,3 @@ for username in load_usernames(args.accounts):
                 caption=(item.get("caption") or "")[:80],
             )
         )
-

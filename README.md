@@ -1,17 +1,19 @@
 # Instagram Competitor Intelligence
 
-Python recipes for Instagram competitor intelligence: public profiles, recent posts and Reels, engagement ranking, hashtag trends, creator mentions, CSV exports, weekly reports, and scheduled monitoring.
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/status-early%20starter-brightgreen)
+![Weekly Report](https://github.com/prodkit-labs/instagram-competitor-intelligence/actions/workflows/weekly-report.yml/badge.svg)
+
+Generate weekly Instagram competitor reports with Python.
+
+Track public brand accounts, rank top-performing Reels, extract hashtag trends, detect creator mentions, and export client-ready Markdown / HTML reports.
+
+> Built for developers, agencies, DTC brands, and social media analysts who want to turn public Instagram data into repeatable competitor insights.
 
 This is not an Instagram API wrapper and it is not an automation bot. It is a practical open-source starter for turning public Instagram data into competitor reports.
 
-## Use Cases
-
-- Track competitor posting cadence across public brand accounts
-- Rank recent Reels and posts by engagement rate
-- Extract recurring hashtag and content themes
-- Detect creator, influencer, and brand mentions in captions
-- Generate weekly Markdown and HTML competitor reports
-- Schedule recurring reports with GitHub Actions or cron
+![Sample Instagram competitor report](assets/sample-report-preview.png)
 
 ## What You Can Build
 
@@ -26,16 +28,99 @@ This is not an Instagram API wrapper and it is not an automation bot. It is a pr
 
 Run the sample report with mock data first. No API key is required.
 
+Clone the repo:
+
+```bash
+git clone https://github.com/prodkit-labs/instagram-competitor-intelligence.git
+cd instagram-competitor-intelligence
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run with mock data:
+
 ```bash
 python3 examples/06_generate_weekly_report.py --mock
 ```
 
-The generated report will be written to:
+Generated reports:
 
 ```text
 reports/sample_weekly_report.md
 reports/sample_weekly_report.html
 ```
+
+Optional syntax check:
+
+```bash
+python3 -m compileall examples src
+```
+
+## Example Output
+
+See:
+
+- [reports/sample_weekly_report.md](reports/sample_weekly_report.md)
+- [reports/sample_weekly_report.html](reports/sample_weekly_report.html)
+
+The report includes:
+
+- competitor activity summary
+- top posts and Reels
+- hashtag trends
+- creator mentions
+- practical recommendations
+- raw CSV-friendly metrics
+
+## Recipes
+
+Start with recipe 06 if you want the fastest end-to-end demo.
+
+| Goal | Recipe |
+| --- | --- |
+| Generate a full weekly competitor report | `examples/06_generate_weekly_report.py` |
+| Rank top-performing Reels and posts | `examples/03_rank_top_reels.py` |
+| Compare multiple competitor accounts | `examples/05_compare_competitors.py` |
+| Extract hashtag trends | `examples/04_extract_hashtags.py` |
+| Find creator and brand mentions | `examples/09_extract_creator_mentions.py` |
+| Export metrics to CSV | `examples/07_export_csv.py` |
+| Schedule recurring reports | `examples/08_schedule_with_github_actions.md` |
+| Estimate API request usage | `examples/10_estimate_api_cost.py` |
+| Structure an agency client report | `examples/11_agency_report_template.md` |
+| Fetch recent public posts and Reels | `examples/02_get_recent_media.py` |
+| Get public profile fields | `examples/01_get_profile.py` |
+
+## Data Sources and Provider Setup
+
+This project runs with mock data by default, so you can try it without any API key.
+
+For real public Instagram data, use a provider adapter. The first adapter included in this repo is HikerAPI, and you can also implement your own provider by following `src/providers/base.py`.
+
+- Mock data: free, no API key
+- HikerAPI: included public-data provider adapter
+- Custom provider: bring your own API or data source
+
+For production decision notes, see:
+
+- [production/provider-comparison.md](production/provider-comparison.md)
+- [production/cost-control.md](production/cost-control.md)
+- [benchmarks/README.md](benchmarks/README.md)
+
+## When to Use a Real Data Provider
+
+Mock data is useful for learning the workflow.
+
+Use a real public-data provider when you want to:
+
+- monitor real competitor accounts
+- refresh reports weekly or daily
+- export live posts and Reels data
+- build dashboards for clients or internal teams
+- compare public brand accounts over time
 
 ## Use Real API Data
 
@@ -58,44 +143,14 @@ Then run:
 python3 examples/06_generate_weekly_report.py
 ```
 
-## Data Source
+## Production Notes
 
-The examples use HikerAPI as one possible provider for Instagram public data. You can replace it with any compatible source by implementing the provider interface in `src/providers/base.py`.
-
-Provider website: https://hikerapi.com/p/ha4fn2v5
-
-Disclosure: the HikerAPI link above is an affiliate link. If you sign up through it, I may earn a commission at no extra cost to you. The examples remain provider-based, and you can use any compatible public-data provider.
-
-## Recipes
-
-| Recipe | What it does |
-| --- | --- |
-| `examples/01_get_profile.py` | Get public profile fields for competitor accounts |
-| `examples/02_get_recent_media.py` | Fetch recent public posts and Reels |
-| `examples/03_rank_top_reels.py` | Rank Reels and posts by engagement |
-| `examples/04_extract_hashtags.py` | Extract and rank hashtags from captions |
-| `examples/05_compare_competitors.py` | Compare competitor accounts side by side |
-| `examples/06_generate_weekly_report.py` | Generate a Markdown and HTML weekly report |
-| `examples/07_export_csv.py` | Export profile and media metrics to CSV |
-| `examples/08_schedule_with_github_actions.md` | Schedule reports with GitHub Actions |
-| `examples/09_extract_creator_mentions.py` | Find creator and brand mentions in captions |
-| `examples/10_estimate_api_cost.py` | Estimate API request usage and rough monthly cost |
-
-## Example Report
-
-See:
-
-- `reports/sample_weekly_report.md`
-- `reports/sample_weekly_report.html`
-
-The report includes:
-
-- competitor activity summary
-- top posts and Reels
-- hashtag trends
-- creator mentions
-- practical recommendations
-- raw CSV-friendly metrics
+- Use mock data first.
+- Start with small account lists.
+- Estimate API usage before scheduling jobs.
+- Cache data where possible.
+- Do not commit API keys.
+- Compare providers in the production docs before scaling scheduled runs.
 
 ## Ethical Use
 
@@ -106,9 +161,19 @@ This project is for public data analysis and reporting. Do not use it for:
 - auto-DM, spam, scraping abuse, fake engagement, or account automation
 - claiming official affiliation with Instagram, Meta, or any data provider
 
-## Project Status
+## Roadmap
 
-This is an early starter for practical, public-data workflows around competitor monitoring, content research, and weekly reporting.
+- [x] Mock data workflow
+- [x] Weekly Markdown / HTML report
+- [x] Reels and post engagement ranking
+- [x] Hashtag trend extraction
+- [x] Creator mention extraction
+- [x] GitHub Actions scheduling example
+- [ ] Streamlit dashboard demo
+- [ ] Google Sheets export guide
+- [ ] Notion report template
+- [ ] Multi-client agency report template
+- [ ] TikTok / YouTube Shorts competitor workflow
 
 ## Need Help?
 

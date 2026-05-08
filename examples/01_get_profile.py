@@ -1,7 +1,6 @@
 from common import load_usernames, parser
 from src.providers.factory import get_provider
 
-
 args = parser("Get public profile data for competitor accounts").parse_args()
 provider = get_provider(use_mock=args.mock)
 
@@ -14,4 +13,3 @@ for username in load_usernames(args.accounts):
             verified=profile.get("is_verified", False),
         )
     )
-

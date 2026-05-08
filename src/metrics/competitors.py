@@ -17,7 +17,10 @@ def compare_competitors(profiles, media_items):
         total_comments = sum(int(item.get("comment_count") or 0) for item in media)
         avg_er = 0.0
         if media:
-            avg_er = sum(engagement_rate(item, profile.get("follower_count", 0)) for item in media) / len(media)
+            avg_er = sum(
+                engagement_rate(item, profile.get("follower_count", 0))
+                for item in media
+            ) / len(media)
 
         hashtags = Counter()
         for item in media:
@@ -36,4 +39,3 @@ def compare_competitors(profiles, media_items):
             }
         )
     return sorted(rows, key=lambda row: row["average_engagement_rate"], reverse=True)
-

@@ -11,4 +11,3 @@ class InstagramDataProvider(ABC):
     @abstractmethod
     def get_recent_media(self, username, limit=12):
         """Return recent public media dictionaries for a username."""
-

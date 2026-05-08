@@ -1,7 +1,9 @@
 def engagement_rate(media, follower_count):
     if not follower_count:
         return 0.0
-    interactions = int(media.get("like_count") or 0) + int(media.get("comment_count") or 0)
+    interactions = int(media.get("like_count") or 0) + int(
+        media.get("comment_count") or 0
+    )
     return interactions / follower_count
 
 
@@ -21,4 +23,3 @@ def rank_media(media_items, key="engagement_rate", limit=10, media_type=None):
     if media_type:
         rows = [row for row in rows if row.get("media_type") == media_type]
     return sorted(rows, key=lambda row: row.get(key) or 0, reverse=True)[:limit]
-

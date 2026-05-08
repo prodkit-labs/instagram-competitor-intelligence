@@ -3,7 +3,6 @@ from pathlib import Path
 
 from src.providers.base import InstagramDataProvider
 
-
 ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -31,4 +30,3 @@ class MockInstagramProvider(InstagramDataProvider):
             if item["username"].lower() == username.lower()
         ]
         return rows[:limit]
-

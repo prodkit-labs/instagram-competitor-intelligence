@@ -1,7 +1,6 @@
 from common import load_profiles_and_media, parser
 from src.metrics.engagement import enrich_media_with_engagement, rank_media
 
-
 args = parser("Rank top posts and Reels by engagement").parse_args()
 profiles, media = load_profiles_and_media(args.mock, args.accounts, args.limit)
 profiles_by_username = {profile["username"]: profile for profile in profiles}
@@ -17,4 +16,3 @@ for item in rank_media(enriched, key="engagement_rate", limit=10):
             comments=int(item.get("comment_count") or 0),
         )
     )
-

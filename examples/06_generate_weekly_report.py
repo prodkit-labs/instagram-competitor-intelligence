@@ -6,7 +6,6 @@ from src.metrics.engagement import enrich_media_with_engagement, rank_media
 from src.reports.html_report import markdown_to_simple_html
 from src.reports.markdown_report import render_markdown_report
 
-
 args = parser("Generate a weekly Instagram competitor report").parse_args()
 profiles, media = load_profiles_and_media(args.mock, args.accounts, args.limit)
 profiles_by_username = {profile["username"]: profile for profile in profiles}
@@ -30,4 +29,3 @@ reports_dir.mkdir(exist_ok=True)
 
 print(f"Wrote {reports_dir / 'sample_weekly_report.md'}")
 print(f"Wrote {reports_dir / 'sample_weekly_report.html'}")
-

@@ -1,7 +1,6 @@
 import re
 from collections import Counter
 
-
 HASHTAG_RE = re.compile(r"(?<!\w)#([\w_]+)", re.UNICODE)
 MENTION_RE = re.compile(r"(?<!\w)@([A-Za-z0-9_.]+)")
 
@@ -11,7 +10,9 @@ def extract_hashtags(text):
 
 
 def extract_mentions(text):
-    return [match.group(1).lower().rstrip("._") for match in MENTION_RE.finditer(text or "")]
+    return [
+        match.group(1).lower().rstrip("._") for match in MENTION_RE.finditer(text or "")
+    ]
 
 
 def hashtag_counts(media_items):

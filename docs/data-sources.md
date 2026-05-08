@@ -1,6 +1,8 @@
-# Data Sources
+# Data Sources and Provider Setup
 
 This project is provider-based. The examples can run with mock data or with a real public Instagram data provider.
+
+Mock data is the default path, so you can try the report workflow without any API key.
 
 ## Option A: Mock Data
 
@@ -20,7 +22,7 @@ data/sample_accounts.csv
 
 ## Option B: HikerAPI
 
-The first real provider adapter is `src/providers/hikerapi.py`.
+For real public Instagram data, the first provider adapter included in this repo is HikerAPI. You can also implement your own provider by following `src/providers/base.py`.
 
 Set:
 
@@ -29,9 +31,15 @@ INSTAGRAM_DATA_PROVIDER=hikerapi
 HIKERAPI_KEY=your_api_key_here
 ```
 
-Provider website: https://hikerapi.com/p/ha4fn2v5
+Use a real public-data provider when you want to:
 
-Disclosure: the HikerAPI link above is an affiliate link. If you sign up through it, I may earn a commission at no extra cost to you. The examples remain provider-based, and you can use any compatible public-data provider.
+- monitor real competitor accounts
+- refresh reports weekly or daily
+- export live posts and Reels data
+- build dashboards for clients or internal teams
+- compare public brand accounts over time
+
+For production provider tradeoffs, see `production/provider-comparison.md`.
 
 ## Option C: Bring Your Own Provider
 

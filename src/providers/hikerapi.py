@@ -29,8 +29,12 @@ class HikerAPIProvider(InstagramDataProvider):
         return {
             "username": raw.get("username", username),
             "full_name": raw.get("full_name") or raw.get("name") or username,
-            "follower_count": raw.get("follower_count") or raw.get("followers_count") or 0,
-            "following_count": raw.get("following_count") or raw.get("followings_count") or 0,
+            "follower_count": raw.get("follower_count")
+            or raw.get("followers_count")
+            or 0,
+            "following_count": raw.get("following_count")
+            or raw.get("followings_count")
+            or 0,
             "media_count": raw.get("media_count") or 0,
             "biography": raw.get("biography") or raw.get("bio") or "",
             "is_verified": bool(raw.get("is_verified", False)),
@@ -45,11 +49,20 @@ class HikerAPIProvider(InstagramDataProvider):
             raise ValueError(f"Could not resolve user id for {username}")
 
         raw = self._get("/v1/user/medias/chunk", {"user_id": user_id, "limit": limit})
-        items = raw.get("response", raw.get("items", raw if isinstance(raw, list) else []))
+        items = raw.get(
+            "response", raw.get("items", raw if isinstance(raw, list) else [])
+        )
         normalized = []
         for item in items[:limit]:
-            caption = item.get("caption_text") or item.get("caption", {}).get("text") or ""
-            media_type = item.get("media_type_name") or item.get("product_type") or item.get("media_type") or "post"
+            caption = (
+                item.get("caption_text") or item.get("caption", {}).get("text") or ""
+            )
+            media_type = (
+                item.get("media_type_name")
+                or item.get("product_type")
+                or item.get("media_type")
+                or "post"
+            )
             code = item.get("code") or item.get("shortcode") or item.get("id")
             normalized.append(
                 {
@@ -65,4 +78,3 @@ class HikerAPIProvider(InstagramDataProvider):
                 }
             )
         return normalized
-

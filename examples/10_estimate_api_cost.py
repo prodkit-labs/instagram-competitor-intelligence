@@ -1,6 +1,5 @@
 from common import load_usernames, parser
 
-
 PLAN_COSTS = {
     "start": 0.02,
     "standard": 0.001,

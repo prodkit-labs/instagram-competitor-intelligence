@@ -7,7 +7,9 @@ def pct(value):
     return f"{value * 100:.2f}%"
 
 
-def render_markdown_report(profiles, enriched_media, competitor_rows, top_media, period=None):
+def render_markdown_report(
+    profiles, enriched_media, competitor_rows, top_media, period=None
+):
     period = period or "Sample period"
     hashtags = hashtag_counts(enriched_media).most_common(10)
     mentions = mention_counts(enriched_media).most_common(10)
@@ -24,7 +26,11 @@ def render_markdown_report(profiles, enriched_media, competitor_rows, top_media,
         f"- Tracked {len(profiles)} competitor accounts.",
         f"- Analyzed {len(enriched_media)} public posts and Reels.",
         f"- Reels in sample: {len(reels)}.",
-        f"- Top hashtag: #{hashtags[0][0]} ({hashtags[0][1]} mentions)." if hashtags else "- No hashtags found.",
+        (
+            f"- Top hashtag: #{hashtags[0][0]} ({hashtags[0][1]} mentions)."
+            if hashtags
+            else "- No hashtags found."
+        ),
         "",
         "## Competitor Snapshot",
         "",
@@ -96,4 +102,3 @@ def render_markdown_report(profiles, enriched_media, competitor_rows, top_media,
         ]
     )
     return "\n".join(lines) + "\n"
-

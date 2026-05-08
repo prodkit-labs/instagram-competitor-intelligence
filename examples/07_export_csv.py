@@ -3,7 +3,6 @@ import csv
 from common import ROOT, load_profiles_and_media, parser
 from src.metrics.engagement import enrich_media_with_engagement
 
-
 args = parser("Export media metrics to CSV").parse_args()
 profiles, media = load_profiles_and_media(args.mock, args.accounts, args.limit)
 profiles_by_username = {profile["username"]: profile for profile in profiles}
@@ -31,4 +30,3 @@ with output.open("w", newline="", encoding="utf-8") as handle:
         writer.writerow({field: item.get(field) for field in fields})
 
 print(f"Wrote {output}")
-

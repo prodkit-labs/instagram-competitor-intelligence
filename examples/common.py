@@ -18,7 +18,9 @@ def parser(description):
         default=str(ROOT / "data/sample_accounts.csv"),
         help="CSV file with a username column",
     )
-    arg_parser.add_argument("--limit", type=int, default=12, help="Media items per account")
+    arg_parser.add_argument(
+        "--limit", type=int, default=12, help="Media items per account"
+    )
     return arg_parser
 
 
