@@ -184,6 +184,17 @@ python3 examples/06_generate_weekly_report.py
 - [Security policy](SECURITY.md)
 - [Changelog](CHANGELOG.md)
 
+## Use Cases
+
+This project can be adapted for different public-data reporting workflows:
+
+- [Agency Client Report](docs/use-cases/agency-client-report.md)
+- [DTC Brand Monitoring](docs/use-cases/dtc-brand-monitoring.md)
+- [Reels Content Research](docs/use-cases/reels-content-research.md)
+- [Hashtag Trend Tracking](docs/use-cases/hashtag-trend-tracking.md)
+- [Creator Mention Research](docs/use-cases/creator-mention-research.md)
+- [Weekly Report Automation](docs/use-cases/weekly-report-automation.md)
+
 ## Ethical Use
 
 This project is for public data analysis and reporting. Do not use it for:

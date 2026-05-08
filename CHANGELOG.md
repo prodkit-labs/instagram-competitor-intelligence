@@ -1,6 +1,19 @@
 # Changelog
 
-## Unreleased - Trust & Documentation Pack
+## v0.3.0 - Use Case Pack
+
+Added practical use-case documentation for different reporting workflows:
+
+- agency client reports
+- DTC brand monitoring
+- Reels content research
+- hashtag trend tracking
+- creator mention research
+- weekly report automation
+
+This release helps users map the starter project to real-world public-data reporting workflows before adding new product features.
+
+## v0.2.0 - Trust & Documentation Pack
 
 Added:
 
