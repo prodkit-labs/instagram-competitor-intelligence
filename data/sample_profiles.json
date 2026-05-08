@@ -1,0 +1,53 @@
+[
+  {
+    "username": "glossier",
+    "full_name": "Glossier",
+    "follower_count": 3200000,
+    "following_count": 530,
+    "media_count": 5400,
+    "biography": "Skincare, makeup, body care and fragrance.",
+    "is_verified": true,
+    "profile_url": "https://www.instagram.com/glossier/"
+  },
+  {
+    "username": "rhode",
+    "full_name": "rhode skin",
+    "follower_count": 2300000,
+    "following_count": 180,
+    "media_count": 980,
+    "biography": "Intentional skincare essentials.",
+    "is_verified": true,
+    "profile_url": "https://www.instagram.com/rhode/"
+  },
+  {
+    "username": "summerfridays",
+    "full_name": "Summer Fridays",
+    "follower_count": 870000,
+    "following_count": 420,
+    "media_count": 2200,
+    "biography": "Skincare and lip care for everyday routines.",
+    "is_verified": true,
+    "profile_url": "https://www.instagram.com/summerfridays/"
+  },
+  {
+    "username": "rarebeauty",
+    "full_name": "Rare Beauty",
+    "follower_count": 7600000,
+    "following_count": 410,
+    "media_count": 3100,
+    "biography": "Makeup made to feel good in.",
+    "is_verified": true,
+    "profile_url": "https://www.instagram.com/rarebeauty/"
+  },
+  {
+    "username": "saiehello",
+    "full_name": "Saie",
+    "follower_count": 690000,
+    "following_count": 360,
+    "media_count": 1600,
+    "biography": "Clean makeup and skincare.",
+    "is_verified": true,
+    "profile_url": "https://www.instagram.com/saiehello/"
+  }
+]
+
