@@ -74,9 +74,9 @@ Suggested sections:
 ```text
 1. Run the mock or provider-backed report workflow.
 2. Generate Markdown / HTML report.
-3. Export CSV metrics.
+3. Export the report pack with `examples/12_export_report_pack.py`.
 4. Copy the executive summary into Feishu.
-5. Import CSV into Feishu tables.
+5. Import `reports/export/*.csv` into Feishu tables.
 6. Share the report with the team or client.
 ```
 

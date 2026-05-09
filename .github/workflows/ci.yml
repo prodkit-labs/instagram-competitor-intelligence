@@ -23,5 +23,7 @@ jobs:
         run: python3 examples/06_generate_weekly_report.py --mock
       - name: Run CSV export
         run: python3 examples/07_export_csv.py --mock
+      - name: Run report pack export
+        run: python3 examples/12_export_report_pack.py --mock
       - name: Run cost estimator
         run: python3 examples/10_estimate_api_cost.py --mock --runs-per-month 4 --requests-per-account 2

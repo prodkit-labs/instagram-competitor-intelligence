@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.5.0 - Report Pack Exporter
+
+Added a multi-file CSV report-pack exporter for spreadsheet and team-workspace workflows.
+
+New recipe:
+
+- `examples/12_export_report_pack.py`
+
+Generated files:
+
+- `reports/export/profiles.csv`
+- `reports/export/media_metrics.csv`
+- `reports/export/top_reels.csv`
+- `reports/export/hashtag_trends.csv`
+- `reports/export/creator_mentions.csv`
+- `reports/export/weekly_summary.csv`
+
+Documentation updates:
+
+- CSV export guide now documents both the existing single-file export and the report-pack exporter.
+- Google Sheets and Feishu / Lark guides now point to the report-pack workflow.
+
 ## v0.4.1 - Quality Fix Pack
 
 Quality fixes:

@@ -8,7 +8,7 @@ The project currently focuses on Markdown, HTML, and CSV-friendly outputs. These
 
 | Integration | Best For | Status |
 | --- | --- | --- |
-| CSV Export | Basic data export and spreadsheet workflows | Supported |
+| CSV Export | Single-file metrics export and multi-file report packs | Supported |
 | Google Sheets | Team dashboards and manual reporting workflows | Guide |
 | Notion | Lightweight content databases and report pages | Guide |
 | Feishu / Lark | China-focused teams, agencies, and client reporting | Guide |
@@ -20,6 +20,12 @@ If you are delivering reports manually, start with:
 
 ```text
 docs/integrations/csv-export.md
+```
+
+To generate spreadsheet-ready tabs locally:
+
+```bash
+python3 examples/12_export_report_pack.py --mock
 ```
 
 If you work with Chinese teams or cross-border operations, start with:

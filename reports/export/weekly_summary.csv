@@ -1,0 +1,2 @@
+account_count,media_count,reel_count,top_account,top_account_average_engagement_rate,top_media_id,top_media_engagement_rate,top_hashtag,top_mention,note
+5,10,5,nord_glow,0.08047101449275362,nord_glow_001,0.10527536231884058,skincare,creator_maya,Sample fixture data is fictional when run with --mock.

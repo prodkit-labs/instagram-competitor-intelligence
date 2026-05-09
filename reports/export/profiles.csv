@@ -1,0 +1,6 @@
+username,full_name,follower_count,following_count,media_count,sample_media_count,average_engagement_rate,biography,is_verified,profile_url
+luma_beauty,Luma Beauty,320000,530,540,2,0.038840625000000004,Fictional skincare and makeup brand for sample reports.,False,https://www.instagram.com/luma_beauty/
+aurora_skin,Aurora Skin,230000,180,980,2,0.06785000000000001,Fictional skincare essentials brand for demo data.,False,https://www.instagram.com/aurora_skin/
+velvet_labs,Velvet Labs,87000,420,220,2,0.07898275862068965,Fictional beauty lab for public-data workflow examples.,False,https://www.instagram.com/velvet_labs/
+mira_cosmetics,Mira Cosmetics,760000,410,310,2,0.03542763157894737,Fictional cosmetics brand used in sample analysis.,False,https://www.instagram.com/mira_cosmetics/
+nord_glow,Nord Glow,69000,360,160,2,0.08047101449275362,Fictional clean beauty brand for mock competitor reports.,False,https://www.instagram.com/nord_glow/

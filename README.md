@@ -82,6 +82,7 @@ See:
 
 - [reports/sample_weekly_report.md](reports/sample_weekly_report.md)
 - [reports/sample_weekly_report.html](reports/sample_weekly_report.html)
+- [reports/export/](reports/export/)
 
 The report includes:
 
@@ -104,6 +105,7 @@ Start with recipe 06 if you want the fastest end-to-end demo.
 | Extract hashtag trends | `examples/04_extract_hashtags.py` |
 | Find creator and brand mentions | `examples/09_extract_creator_mentions.py` |
 | Export metrics to CSV | `examples/07_export_csv.py` |
+| Export a multi-file report pack | `examples/12_export_report_pack.py` |
 | Schedule recurring reports | `examples/08_schedule_with_github_actions.md` |
 | Estimate API request usage | `examples/10_estimate_api_cost.py` |
 | Structure an agency client report | `examples/11_agency_report_template.md` |
@@ -241,8 +243,8 @@ This project is for public data analysis and reporting. Do not use it for:
 - [x] Google Sheets integration guide
 - [x] Notion integration guide
 - [x] Feishu / Lark integration guide
+- [x] Report pack CSV exporter
 - [ ] Streamlit dashboard demo
-- [ ] Report pack CSV exporter
 - [ ] Provider-backed run examples
 - [ ] Mock benchmark script
 - [ ] Multi-client workspace prototype

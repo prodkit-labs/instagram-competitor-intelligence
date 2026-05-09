@@ -4,6 +4,12 @@ Google Sheets is a practical first step for turning competitor workflow outputs 
 
 This guide assumes you are starting with CSV exports.
 
+Generate the report pack:
+
+```bash
+python3 examples/12_export_report_pack.py --mock
+```
+
 ## Recommended Sheets
 
 Create a Google Sheet with these tabs:
@@ -99,8 +105,8 @@ recommended actions
 
 ```text
 1. Run the report workflow.
-2. Export CSV.
-3. Import CSV into Google Sheets.
+2. Export the report pack.
+3. Import `reports/export/*.csv` into matching Google Sheets tabs.
 4. Refresh pivot tables or filters.
 5. Write weekly summary.
 6. Share with team or client.

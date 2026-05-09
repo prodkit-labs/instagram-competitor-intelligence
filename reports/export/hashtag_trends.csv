@@ -1,0 +1,16 @@
+rank,hashtag,frequency,related_accounts,top_media_id,top_media_permalink
+1,skincare,4,"aurora_skin, luma_beauty, nord_glow, velvet_labs",velvet_labs_001,https://www.instagram.com/reel/sample-velvet-labs-001/
+2,makeup,4,"luma_beauty, mira_cosmetics, nord_glow",nord_glow_002,https://www.instagram.com/p/sample-nord-glow-002/
+3,productdemo,4,"aurora_skin, nord_glow, velvet_labs",nord_glow_001,https://www.instagram.com/reel/sample-nord-glow-001/
+4,ugc,3,"luma_beauty, mira_cosmetics, velvet_labs",velvet_labs_001,https://www.instagram.com/reel/sample-velvet-labs-001/
+5,grwm,2,"luma_beauty, nord_glow",nord_glow_001,https://www.instagram.com/reel/sample-nord-glow-001/
+6,community,2,"luma_beauty, mira_cosmetics",luma_beauty_002,https://www.instagram.com/p/sample-luma-beauty-002/
+7,lipcare,2,"aurora_skin, velvet_labs",aurora_skin_001,https://www.instagram.com/reel/sample-aurora-skin-001/
+8,creatorcollab,2,"aurora_skin, mira_cosmetics",aurora_skin_001,https://www.instagram.com/reel/sample-aurora-skin-001/
+9,browroutine,1,luma_beauty,luma_beauty_002,https://www.instagram.com/p/sample-luma-beauty-002/
+10,texture,1,aurora_skin,aurora_skin_002,https://www.instagram.com/p/sample-aurora-skin-002/
+11,beforeafter,1,velvet_labs,velvet_labs_001,https://www.instagram.com/reel/sample-velvet-labs-001/
+12,shadeguide,1,velvet_labs,velvet_labs_002,https://www.instagram.com/p/sample-velvet-labs-002/
+13,blush,1,mira_cosmetics,mira_cosmetics_001,https://www.instagram.com/reel/sample-mira-cosmetics-001/
+14,glowyskin,1,nord_glow,nord_glow_001,https://www.instagram.com/reel/sample-nord-glow-001/
+15,routine,1,nord_glow,nord_glow_002,https://www.instagram.com/p/sample-nord-glow-002/
