@@ -24,14 +24,14 @@ Example:
 
 ```json
 {
-  "username": "glossier",
-  "full_name": "Glossier",
-  "follower_count": 3200000,
+  "username": "luma_beauty",
+  "full_name": "Luma Beauty",
+  "follower_count": 320000,
   "following_count": 530,
-  "media_count": 5400,
-  "biography": "Skincare, makeup, body care and fragrance.",
-  "is_verified": true,
-  "profile_url": "https://www.instagram.com/glossier/"
+  "media_count": 540,
+  "biography": "Fictional skincare and makeup brand for sample reports.",
+  "is_verified": false,
+  "profile_url": "https://www.instagram.com/luma_beauty/"
 }
 ```
 
@@ -55,15 +55,15 @@ Example:
 
 ```json
 {
-  "username": "glossier",
-  "media_id": "glossier_001",
+  "username": "luma_beauty",
+  "media_id": "luma_beauty_001",
   "media_type": "reel",
-  "caption": "A dewy base routine with @creator_maya using Cloud Paint and Futuredew. #grwm #ugc #skincare",
-  "like_count": 182000,
-  "comment_count": 1850,
-  "play_count": 2100000,
+  "caption": "A dewy base routine with @creator_maya using Glow Tint and Dew Serum. #grwm #ugc #skincare",
+  "like_count": 18200,
+  "comment_count": 185,
+  "play_count": 210000,
   "taken_at": "2026-05-02T14:30:00Z",
-  "permalink": "https://www.instagram.com/reel/sample-glossier-001/"
+  "permalink": "https://www.instagram.com/reel/sample-luma-beauty-001/"
 }
 ```
 
@@ -72,6 +72,8 @@ Example:
 `data/sample_accounts.csv` contains the usernames used by examples.
 
 The recipes expect a `username` column.
+
+The included sample accounts and media are fictional. They are designed to demonstrate the workflow and do not represent actual brand metrics.
 
 ## Derived Fields
 

@@ -8,15 +8,23 @@ CSV export is the simplest way to move workflow output into spreadsheets, dashbo
 python3 examples/07_export_csv.py --mock
 ```
 
-## Suggested CSV Outputs
+Current output:
 
-Depending on your workflow, useful CSV files may include:
+```text
+reports/media_metrics.csv
+```
+
+This file contains one row per media record with engagement metrics that can be imported into Google Sheets, Excel, Notion, Feishu / Lark, or BI tools.
+
+## Future Report Pack Outputs
+
+The current recipe intentionally starts with a single CSV. A future report-pack exporter may split the workflow into multiple files:
 
 ```text
 profiles.csv
-media.csv
+media_metrics.csv
 top_reels.csv
-hashtags.csv
+hashtag_trends.csv
 creator_mentions.csv
 weekly_summary.csv
 ```

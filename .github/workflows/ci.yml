@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile Python files
+        run: python3 -m compileall examples src
+      - name: Run mock report
+        run: python3 examples/06_generate_weekly_report.py --mock
+      - name: Run CSV export
+        run: python3 examples/07_export_csv.py --mock
+      - name: Run cost estimator
+        run: python3 examples/10_estimate_api_cost.py --mock --runs-per-month 4 --requests-per-account 2

@@ -7,6 +7,46 @@ def pct(value):
     return f"{value * 100:.2f}%"
 
 
+def count_word(count):
+    return "time" if count == 1 else "times"
+
+
+def recommended_actions(enriched_media, hashtags, mentions):
+    actions = []
+    total = len(enriched_media)
+    reels = [item for item in enriched_media if item.get("media_type") == "reel"]
+    if total and reels:
+        actions.append(
+            f"Prioritize Reels analysis because Reels represent {len(reels)} of {total} analyzed media records."
+        )
+    elif total:
+        actions.append(
+            f"Compare content formats across all {total} analyzed media records before choosing a testing theme."
+        )
+
+    if hashtags:
+        top_tags = ", ".join(f"#{tag}" for tag, _ in hashtags[:3])
+        actions.append(
+            f"Test content themes around {top_tags} because they appear most often in the sample."
+        )
+
+    repeated_mentions = [mention for mention, count in mentions if count > 1]
+    if repeated_mentions:
+        top_mentions = ", ".join(f"@{mention}" for mention in repeated_mentions[:3])
+        actions.append(
+            f"Continue monitoring {top_mentions} because they appear multiple times in competitor captions."
+        )
+    else:
+        actions.append(
+            "Track creator mentions weekly to identify repeated collaborations instead of judging from one snapshot."
+        )
+
+    actions.append(
+        "Review the highest-engagement posts and turn the strongest formats into a controlled content test."
+    )
+    return actions
+
+
 def render_markdown_report(
     profiles, enriched_media, competitor_rows, top_media, period=None
 ):
@@ -23,6 +63,7 @@ def render_markdown_report(
         "",
         "## Summary",
         "",
+        "- Sample data is fictional and does not represent actual brand metrics.",
         f"- Tracked {len(profiles)} competitor accounts.",
         f"- Analyzed {len(enriched_media)} public posts and Reels.",
         f"- Reels in sample: {len(reels)}.",
@@ -77,28 +118,26 @@ def render_markdown_report(
 
     lines.extend(["", "## Hashtag Trends", ""])
     for tag, count in hashtags:
-        lines.append(f"- `#{tag}` appeared {count} times.")
+        lines.append(f"- `#{tag}` appeared {count} {count_word(count)}.")
 
     lines.extend(["", "## Creator And Brand Mentions", ""])
     if mentions:
         for mention, count in mentions:
-            lines.append(f"- `@{mention}` appeared {count} times.")
+            lines.append(f"- `@{mention}` appeared {count} {count_word(count)}.")
     else:
         lines.append("- No creator mentions found in the sample captions.")
 
+    actions = recommended_actions(enriched_media, hashtags, mentions)
     lines.extend(
         [
             "",
             "## Recommended Actions",
             "",
-            "1. Study the highest-engagement Reels and identify repeatable content formats.",
-            "2. Test a UGC or creator-collaboration post if creator mentions appear frequently.",
-            "3. Reuse promising hashtag clusters in a controlled content test.",
-            "4. Track the same accounts weekly to build trend history instead of judging from one snapshot.",
+            *[f"{index}. {action}" for index, action in enumerate(actions, start=1)],
             "",
             "## Notes",
             "",
-            "This sample uses public data and mock fixtures by default. Replace the provider when using a production data source.",
+            "This sample uses fictional public-style data by default. Replace the provider when using a production data source.",
         ]
     )
     return "\n".join(lines) + "\n"

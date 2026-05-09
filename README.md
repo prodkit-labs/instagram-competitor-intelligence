@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/status-early%20starter-brightgreen)
+![CI](https://github.com/prodkit-labs/instagram-competitor-intelligence/actions/workflows/ci.yml/badge.svg)
 ![Weekly Report](https://github.com/prodkit-labs/instagram-competitor-intelligence/actions/workflows/weekly-report.yml/badge.svg)
 
 Generate weekly Instagram competitor reports with Python.
@@ -149,8 +150,8 @@ cp .env.example .env
 Set a provider adapter and the provider-specific API key:
 
 ```text
-INSTAGRAM_DATA_PROVIDER=your_provider_name
-PROVIDER_SPECIFIC_API_KEY=your_api_key_here
+INSTAGRAM_DATA_PROVIDER=hikerapi
+HIKERAPI_KEY=your_api_key_here
 ```
 
 For the included HikerAPI adapter and custom provider setup, see:
@@ -234,10 +235,17 @@ This project is for public data analysis and reporting. Do not use it for:
 - [x] Hashtag trend extraction
 - [x] Creator mention extraction
 - [x] GitHub Actions scheduling example
+- [x] Trust and documentation pack
+- [x] Use case documentation
+- [x] Report templates
+- [x] Google Sheets integration guide
+- [x] Notion integration guide
+- [x] Feishu / Lark integration guide
 - [ ] Streamlit dashboard demo
-- [ ] Google Sheets export guide
-- [ ] Notion report template
-- [ ] Multi-client agency report template
+- [ ] Report pack CSV exporter
+- [ ] Provider-backed run examples
+- [ ] Mock benchmark script
+- [ ] Multi-client workspace prototype
 - [ ] TikTok / YouTube Shorts competitor workflow
 
 ## Need Help?

@@ -1,53 +1,52 @@
 [
   {
-    "username": "glossier",
-    "full_name": "Glossier",
-    "follower_count": 3200000,
+    "username": "luma_beauty",
+    "full_name": "Luma Beauty",
+    "follower_count": 320000,
     "following_count": 530,
-    "media_count": 5400,
-    "biography": "Skincare, makeup, body care and fragrance.",
-    "is_verified": true,
-    "profile_url": "https://www.instagram.com/glossier/"
+    "media_count": 540,
+    "biography": "Fictional skincare and makeup brand for sample reports.",
+    "is_verified": false,
+    "profile_url": "https://www.instagram.com/luma_beauty/"
   },
   {
-    "username": "rhode",
-    "full_name": "rhode skin",
-    "follower_count": 2300000,
+    "username": "aurora_skin",
+    "full_name": "Aurora Skin",
+    "follower_count": 230000,
     "following_count": 180,
     "media_count": 980,
-    "biography": "Intentional skincare essentials.",
-    "is_verified": true,
-    "profile_url": "https://www.instagram.com/rhode/"
+    "biography": "Fictional skincare essentials brand for demo data.",
+    "is_verified": false,
+    "profile_url": "https://www.instagram.com/aurora_skin/"
   },
   {
-    "username": "summerfridays",
-    "full_name": "Summer Fridays",
-    "follower_count": 870000,
+    "username": "velvet_labs",
+    "full_name": "Velvet Labs",
+    "follower_count": 87000,
     "following_count": 420,
-    "media_count": 2200,
-    "biography": "Skincare and lip care for everyday routines.",
-    "is_verified": true,
-    "profile_url": "https://www.instagram.com/summerfridays/"
+    "media_count": 220,
+    "biography": "Fictional beauty lab for public-data workflow examples.",
+    "is_verified": false,
+    "profile_url": "https://www.instagram.com/velvet_labs/"
   },
   {
-    "username": "rarebeauty",
-    "full_name": "Rare Beauty",
-    "follower_count": 7600000,
+    "username": "mira_cosmetics",
+    "full_name": "Mira Cosmetics",
+    "follower_count": 760000,
     "following_count": 410,
-    "media_count": 3100,
-    "biography": "Makeup made to feel good in.",
-    "is_verified": true,
-    "profile_url": "https://www.instagram.com/rarebeauty/"
+    "media_count": 310,
+    "biography": "Fictional cosmetics brand used in sample analysis.",
+    "is_verified": false,
+    "profile_url": "https://www.instagram.com/mira_cosmetics/"
   },
   {
-    "username": "saiehello",
-    "full_name": "Saie",
-    "follower_count": 690000,
+    "username": "nord_glow",
+    "full_name": "Nord Glow",
+    "follower_count": 69000,
     "following_count": 360,
-    "media_count": 1600,
-    "biography": "Clean makeup and skincare.",
-    "is_verified": true,
-    "profile_url": "https://www.instagram.com/saiehello/"
+    "media_count": 160,
+    "biography": "Fictional clean beauty brand for mock competitor reports.",
+    "is_verified": false,
+    "profile_url": "https://www.instagram.com/nord_glow/"
   }
 ]
-
