@@ -195,6 +195,28 @@ This project can be adapted for different public-data reporting workflows:
 - [Creator Mention Research](docs/use-cases/creator-mention-research.md)
 - [Weekly Report Automation](docs/use-cases/weekly-report-automation.md)
 
+## Templates And Integrations
+
+Use these docs to turn workflow outputs into client-ready or team-ready deliverables.
+
+Templates:
+
+- [Agency Weekly Report](docs/templates/agency-weekly-report.md)
+- [DTC Brand Report](docs/templates/dtc-brand-report.md)
+- [Reels Breakdown Template](docs/templates/reels-breakdown-template.md)
+- [Hashtag Trend Template](docs/templates/hashtag-trend-template.md)
+- [Creator Mention Research Template](docs/templates/creator-mention-research-template.md)
+- [Executive Summary Template](docs/templates/executive-summary-template.md)
+- [Service Delivery Checklist](docs/templates/service-delivery-checklist.md)
+
+Integrations:
+
+- [CSV Export](docs/integrations/csv-export.md)
+- [Google Sheets](docs/integrations/google-sheets.md)
+- [Notion](docs/integrations/notion.md)
+- [Feishu / Lark](docs/integrations/feishu-lark.md)
+- [Email Reports](docs/integrations/email-reports.md)
+
 ## Ethical Use
 
 This project is for public data analysis and reporting. Do not use it for:

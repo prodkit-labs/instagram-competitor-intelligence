@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.4.0 - Templates & Integration Pack
+
+Added reusable report templates and integration guides for turning workflow outputs into client-ready and team-ready deliverables.
+
+New templates:
+
+- agency weekly report
+- DTC brand report
+- Reels breakdown template
+- hashtag trend template
+- creator mention research template
+- executive summary template
+- service delivery checklist
+
+New integration guides:
+
+- CSV export
+- Google Sheets
+- Notion
+- Feishu / Lark
+- email reports
+
+This release helps users move from running examples to delivering reports, organizing outputs, and building lightweight reporting workflows for teams or clients.
+
 ## v0.3.0 - Use Case Pack
 
 Added practical use-case documentation for different reporting workflows:
